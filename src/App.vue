@@ -1,29 +1,17 @@
 <template>
   <div id="app">
-    <Stats port="8765"></Stats>
+    <Home></Home>
   </div>
 </template>
-
 <script>
-
-import Stats from "@/components/Stats";
+import Home from "@/views/Home";
 
 export default {
-  name: 'App',
-  data(){
-  },
   components:{
-    Stats
-  },
-  created() {
-    this.refreshStats()
-  },
-  methods:{
-
+    Home
   }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -31,6 +19,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
